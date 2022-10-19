@@ -3,13 +3,13 @@ package service.core;
 /**
  * Interface to define the state to be stored in ClientInfo objects
  * 
- * @author Rem
+ * @author Parth
  *
  */
 public class ClientInfo {
 
-	private static final char MALE = 'M';
-	private static final char FEMALE = 'F';
+	public static final char MALE = 'M';
+	public static final char FEMALE = 'F';
 	private String name;
 	private char gender;
 	private int age;
@@ -20,10 +20,13 @@ public class ClientInfo {
 	public ClientInfo() {
 	}
 
-	public String getName() {
-		return name;
-	}
-
+//	public char getMale(){
+//		return MALE;
+//	}
+//	public char getFemale(){
+//		return FEMALE;
+//	}
+	public String getName() {return name;}
 	public void setName(String name) {
 		this.name = name;
 	}

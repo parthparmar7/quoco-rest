@@ -3,7 +3,7 @@ package service.core;
 /**
  * Class to store the quotations returned by the quotation services
  * 
- * @author Rem
+ * @author Parth
  *
  */
 
@@ -13,7 +13,7 @@ public class Quotation {
 	private String reference;
 	private double price;
 
-	public Quotation() {
+	public Quotation(String company, String s, double v) {
 	}
 //	public Quotation(String company, String reference, double price) {
 //		this.company = company;

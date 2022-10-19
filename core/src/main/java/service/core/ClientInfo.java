@@ -20,12 +20,15 @@ public class ClientInfo {
 	public ClientInfo() {
 	}
 
-//	public char getMale(){
-//		return MALE;
-//	}
-//	public char getFemale(){
-//		return FEMALE;
-//	}
+	public ClientInfo(String name, char sex, int age, int points, int noClaims, String licenseNumber) {
+		this.name = name;
+		this.gender = sex;
+		this.age = age;
+		this.points = points;
+		this.noClaims = noClaims;
+		this.licenseNumber = licenseNumber;
+	}
+
 	public String getName() {return name;}
 	public void setName(String name) {
 		this.name = name;
@@ -74,13 +77,6 @@ public class ClientInfo {
 }
 
 
-//
-//	public ClientInfo(String name, char sex, int age, int points, int noClaims, String licenseNumber) {
-//		this.name = name;
-//		this.gender = sex;
-//		this.age = age;
-//		this.points = points;
-//		this.noClaims = noClaims;
-//		this.licenseNumber = licenseNumber;
-//	}
+
+
 

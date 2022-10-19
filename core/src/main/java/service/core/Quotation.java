@@ -13,14 +13,15 @@ public class Quotation {
 	private String reference;
 	private double price;
 
-	public Quotation(String company, String s, double v) {
+	public Quotation() {
 	}
-//	public Quotation(String company, String reference, double price) {
-//		this.company = company;
-//		this.reference = reference;
-//		this.price = price;
-//
-//	}
+
+	public Quotation(String company, String reference, double price) {
+		this.company = company;
+		this.reference = reference;
+		this.price = price;
+
+	}
 
 	public String getCompany() {
 		return company;

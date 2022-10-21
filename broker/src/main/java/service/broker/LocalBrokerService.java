@@ -26,7 +26,7 @@ public class LocalBrokerService {
 
 	public static Map<Long, ClientInfo> cache = new HashMap<>();
 	public static int SEED_ID = 0;
-	List<String> arrayList = new ArrayList<>(asList("http://localhost:8081/quotations", "http://localhost:8082/quotations", "http://localhost:8083/quotations"));
+	static List<String> arrayList = new ArrayList<>(asList("http://localhost:8081/quotations", "http://localhost:8082/quotations", "http://localhost:8083/quotations"));
 	HashMap<Integer, ClientApplication> applications = new HashMap<Integer, ClientApplication>() {};
 
 

@@ -1,5 +1,6 @@
 import org.springframework.http.HttpEntity;
 import org.springframework.web.client.RestTemplate;
+import service.core.ClientApplication;
 import service.core.ClientInfo;
 import service.core.Quotation;
 
@@ -11,10 +12,11 @@ public class Client {
         RestTemplate restTemplate = new RestTemplate();
         HttpEntity<ClientInfo> request = new HttpEntity<>(clients[0]);
 
-        Quotation quotation = restTemplate.postForObject("http://localhost:8080/quotations", request, Quotation.class);
+        ClientApplication clientApplication = restTemplate.postForObject("http://localhost:8080/application", request, ClientApplication.class);
 
         displayProfile(clients[0]);
-        displayQuotation(quotation);
+        for (Quotation quotation :clientApplication.getQuotationList())
+            displayQuotation(quotation);
     }
     public static void displayProfile(ClientInfo info) {
         System.out.println("|=================================================================================================================|");
